@@ -15,7 +15,7 @@ function createWindow () {
   win.loadURL(`file://${__dirname}/index.html`)
 
   // Open the DevTools.
-  //mainWindow.w Contents.openDevTools()
+  win.webContents.openDevTools()
   let contents = win.webContents
   console.log(contents)
 
